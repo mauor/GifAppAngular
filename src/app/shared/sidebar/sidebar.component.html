@@ -1,0 +1,12 @@
+<!-- Slidebar -->
+<div class="flex-column p-3 bg-dark" id="slidebar">
+    <h3>Gifts App</h3>
+    <hr>
+    <div class="list-group list-reset">
+        <a (click)="buscar(valor)" class="list-group-item list-group-item-action bg-primary" *ngFor="let valor of historial">
+            {{valor | titlecase}}
+        </a>
+    </div>
+    <hr>
+</div>
+<!-- End Slidebar -->
